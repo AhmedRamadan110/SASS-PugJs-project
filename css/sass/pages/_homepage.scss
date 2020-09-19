@@ -1,0 +1,122 @@
+// Slider
+.slider {
+  text-align: center;
+  q {
+    width: 80%;
+    margin: 20px auto;
+    display: block;
+    font-style: italic;
+    line-height: 1.8;
+  }
+  img {
+    max-width: 100%;
+  }
+  .bullets {
+    li {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #d1d1d1;
+      &.active,&:hover {
+        background-color: transparent;
+        border: 2px solid #333;
+      }
+    }
+  }
+}
+
+// Services
+.item {
+  float: $floatLeft;
+  width: calc(100% / 3);
+  &:not(:last-of-type) {
+    padding-right: 20px;
+    @media #{$maxMobile} {
+      text-align: center;
+      width: calc(100% / 1);
+    }
+  }
+  margin: 40px 0;
+  h1 {
+    color: $h1Color;
+    font-size: 25px;
+    i {
+      color: #000;
+      font-size: 35px;
+      padding-right: 10px;
+      @media #{$maxMobile} {
+        display: block;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  p {
+    @media #{$maxMobile} {
+      margin: 0 auto 20px auto;
+    }
+  }
+  a {
+    color: $redColor;
+  }
+}
+
+// Our Players
+.our-players {
+  .member {
+    &:not(:last-of-type) {
+      padding-right: 20px;
+    }
+    @media #{$maxMobile} {
+      width: calc(100% / 1);
+      text-align: center;
+    }
+    @media #{$minSmall} {
+      float: $floatLeft;
+      width: calc(100% / 2);
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    @media #{$minMedium} {
+      width: calc(100% / 3);
+      text-align: left;
+      margin-bottom: 40px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    @media #{$minLarge} {
+      width: calc(100% / 5);
+    }
+    img {
+      width: 200px;
+      height: 200px;
+      @media #{$minSmall} {
+        margin-top: 20px;
+      }
+      @media #{$maxMobile} {
+        width: 50%;
+        height: 50%;
+        margin-top: 20px;
+      }
+    }
+    a {
+      color: $redColor;
+    }
+  }
+}
+
+// Lorem Ipsum
+.lorem {
+  .images {
+    text-align: center;
+    img {
+      padding-right: 20px;
+      @media #{$maxMobile} {
+        display: block;
+        width: 300px;
+        height: 300px;
+        margin: 20px auto;
+      }
+    }
+  }
+}

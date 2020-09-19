@@ -1,0 +1,49 @@
+html {
+  direction: rtl; }
+
+@media (min-width: 992px) {
+  .header .logo {
+    float: right; } }
+.header .nav {
+  float: right; }
+  @media (min-width: 992px) {
+    .header .nav {
+      float: right; } }
+  .header .nav li {
+    float: right; }
+    @media (max-width: 767px) {
+      .header .nav li {
+        display: block;
+        float: none;
+        padding: 20px 0; } }
+
+.dropdown-list {
+  top: 40px;
+  left: 20px;
+  text-align: left; }
+
+.item {
+  float: right; }
+
+@media (min-width: 768px) {
+  .our-players .member {
+    float: right; } }
+@media (min-width: 992px) {
+  .our-players .member {
+    text-align: right; } }
+
+.footer .gallery, .footer .contact, .footer .info {
+  float: right; }
+.footer .gallery .img-box img {
+  float: right; }
+.footer .gallery .img-box .text {
+  float: right; }
+.footer .copyright .text {
+  float: right; }
+.footer .copyright .author {
+  float: left; }
+  @media (max-width: 767px) {
+    .footer .copyright .author {
+      text-align: left; } }
+
+/*# sourceMappingURL=homepage-rtl.css.map */

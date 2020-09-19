@@ -1,0 +1,116 @@
+doctype
+html(lang="en" dir="ltr")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    block title
+      title Sass & pugJs Template
+    link(rel="stylesheet", href="css/all.min.css")
+    link(rel="stylesheet", href="css/normalize.css")
+    link(rel="shortcut icon" type="image/x-icon", href="css/favicon (1).ico")
+    link(rel="stylesheet", href="css/homepage.css")
+  body
+    //- Header
+    .header
+      .container
+        .logo
+          h1 Composition
+          p Free PSD Website Template
+        ul.nav
+          each val in ['Homepage', 'Style Demo', 'Full Width', 'Dropdown', 'Link Text']
+            li: a(href="#")= val
+        .dropdown-list 
+          i(class="fas fa-bars")
+    //- Slider
+    .slider
+      .container
+        q Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+        img(src="images/slider.jfif", alt="Laptop Image")
+        ul.bullets
+          - for(let i = 1; i <= 4; i++)
+            li
+    //- Services
+    .services
+      .container
+        .border-head
+          h2 Our Services
+          .item
+            h1 #[i(class="fas fa-globe-asia")] Indonectetus facilis
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            a(href="#") Read More >>
+          .item
+            h1 #[i(class="fas fa-users")] Indonectetus facilis
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            a(href="#") Read More >>
+          .item
+            h1 #[i(class="fas fa-cogs")] Indonectetus facilis
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            a(href="#") Read More >>
+          .clearfix      
+    //- Our Players
+    .our-players
+      .container
+        .border-head
+          h2 Our Players
+        .member
+          img(src="images/image1.jpeg")
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          a(href="#") Read More >>
+        .member
+          img(src="images/image2.jfif")
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          a(href="#") Read More >>
+        .member
+          img(src="images/image3.jfif")
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          a(href="#") Read More >>
+        .member
+          img(src="images/image4.jfif")
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          a(href="#") Read More >>
+        .member
+          img(src="images/image5.jfif")
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          a(href="#") Read More >> 
+        .clearfix   
+    //- Lorem Ipsum
+    .lorem
+      .container
+        .border-head
+          h2 Lorem Ipsum
+        .images
+          - for(let c = 1; c <= 3; c++)
+            img(src="http://placehold.it/200x200")
+    //- Footer
+    .footer
+      .container
+        .gallery
+          h3 Latest From Blog
+          - for(let box = 1; box <= 2; box++)
+            .img-box
+              img(src="http://placehold.it/200x200")
+              .text 
+                h3 lorem ipsum dollar sign.
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+        //- Info
+        .info 
+          ul
+            h3 Company Details
+            each val in ['Company Name', 'Street Name & Number', 'Town', 'Pstal Code', 'Tel: 012222235', 'Fax: 012222235', 'Email: Me@Ahmed.com']
+              li= val
+            h3 Working Hours
+            p Monday - Friday 08:00 - 17:00
+        //- Contact 
+        .contact 
+          h3 Contact Us
+          form
+            input(type="text", name="Text")
+            input(type="email", name="Email")
+            textarea
+            input(class="main_btn", type="submit", name="submit")
+        .clearfix
+        .copyright
+          .text All Right Reserved &copy; 2020
+          .author Designed By Os Template  
+    script(src="js/jquery-3.4.0.js")
+    script(src="js/bug.js")

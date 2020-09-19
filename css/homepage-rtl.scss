@@ -1,0 +1,88 @@
+@import 'sass/helpers/variables';
+
+html {
+  direction: rtl;
+}
+
+// Floats
+$floatLeft: right;
+$floatRight: left;
+
+// Texts
+$textLeft: right;
+$textRight: left;
+
+// Header
+.header {
+  .logo {
+    @media #{$minMedium} {
+      float: $floatLeft;
+    }
+  }
+  .nav {
+    float: $floatLeft;
+    @media #{$minMedium} {
+      float: $floatLeft;
+    }
+    li {
+      float: $floatLeft;
+      @media #{$maxMobile} {
+        display: block;
+        float: none;
+        padding: 20px 0;
+      }
+    }
+  }
+}
+
+.dropdown-list {
+  top: 40px;
+  left: 20px;
+  text-align: $textRight;
+}
+
+// Services
+.item {
+  float: $floatLeft;
+}
+
+// Our Players
+.our-players {
+  .member {
+    @media #{$minSmall} {
+      float: $floatLeft;
+    }
+    @media #{$minMedium} {
+      text-align: $textLeft;
+    }
+  }
+}
+
+// Footer
+.footer {
+  .gallery, .contact, .info {
+    float: $floatLeft;
+  }
+  .gallery {
+    .img-box {
+      img {
+        float: $floatLeft;
+      }
+      .text {
+          float: $floatLeft;
+      }
+    }
+  }
+
+  .copyright {
+    .text {
+      float: $floatLeft;
+    }
+    .author {
+      @media #{$maxMobile} {
+        text-align: $textRight;
+      }
+      float: $floatRight;
+    }
+  }
+}
